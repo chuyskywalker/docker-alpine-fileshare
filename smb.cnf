@@ -1,0 +1,15 @@
+[global]
+  workgroup = WORKGROUP
+  dos charset = cp850
+  unix charset = ISO-8859-1
+  security = user
+  map to guest = Bad User
+  log file = /var/log/samba/%m.log
+  max log size = 50
+[files]
+  browseable = yes
+  writeable = yes
+  guest ok = yes
+  read only = no
+  public = yes
+  path = /var/share
