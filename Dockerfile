@@ -1,6 +1,6 @@
 FROM alpine:latest
 
-RUN apk add -u --no-cache nano sudo samba samba-common-tools \
+RUN apk add -u --no-cache samba samba-common-tools \
  && rm -rf /var/cache/apk/* \
  && addgroup fs \
  && adduser -D -s /bin/sh -G fs fs \
