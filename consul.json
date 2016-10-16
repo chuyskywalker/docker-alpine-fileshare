@@ -1,0 +1,23 @@
+{
+  "data_dir": "/tmp/consul",
+  "retry_join": [ "192.168.1.51", "192.168.1.52", "192.168.1.53" ],
+  "leave_on_terminate": true,
+  "services": [{
+    "name": "fs"
+  }],
+  "checks": [{
+    "id": "fs-139",
+    "name": "fs-139",
+    "tcp": "127.0.0.1:139",
+    "interval": "10s",
+    "timeout": "1s",
+    "service_id": "fs"
+  },{
+    "id": "fs-445",
+    "name": "fs-445",
+    "tcp": "127.0.0.1:445",
+    "interval": "10s",
+    "timeout": "1s",
+    "service_id": "fs"
+  }]
+}

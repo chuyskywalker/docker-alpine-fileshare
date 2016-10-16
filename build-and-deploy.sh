@@ -9,7 +9,7 @@ cd $DIR
 
 TS=$(git show -s --format=%ct HEAD)
 ID=$(git rev-parse --short=12 HEAD)
-CNAME="registry.service.consul/afs:$TS-$ID"
+CNAME="registry.service.consul/fs:$TS-$ID"
 
 echo "-- Build deployment container ($CNAME)"
 docker build -t $CNAME .

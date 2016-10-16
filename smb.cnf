@@ -6,6 +6,10 @@
   map to guest = Bad User
   log file = /var/log/samba/%m.log
   max log size = 50
+  load printers = no
+  printing = bsd
+  printcap name = /dev/null
+  disable spoolss = yes
 [files]
   browseable = yes
   writeable = yes
